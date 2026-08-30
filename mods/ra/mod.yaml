@@ -179,6 +179,18 @@ FluentMessages:
 	ra|fluent/hotkeys.ftl
 	ra|fluent/rules.ftl
 
+FluentLanguages:
+	ko:
+		common|fluent/ko/common.ftl
+		common|fluent/ko/chrome.ftl
+		common|fluent/ko/ingame-debug.ftl
+		common|fluent/ko/hotkeys.ftl
+		common|fluent/ko/rules.ftl
+		ra|fluent/ko/ra.ftl
+		ra|fluent/ko/chrome.ftl
+		ra|fluent/ko/hotkeys.ftl
+		ra|fluent/ko/rules.ftl
+
 AllowUnusedFluentMessagesInExternalPackages: false
 
 Weapons:

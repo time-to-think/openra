@@ -60,6 +60,9 @@ namespace OpenRA
 			ChromeMetrics, MapCompatibility, Missions, Hotkeys;
 
 		public readonly FrozenDictionary<string, string> MapFolders;
+
+		/// <summary>Optional per-language fluent overrides, keyed by culture code. Loaded on top of <see cref="FluentMessages"/>.</summary>
+		public readonly FrozenDictionary<string, ImmutableArray<string>> FluentLanguages;
 		public readonly MiniYaml FileSystem;
 		public readonly MiniYaml LoadScreen;
 		public readonly string DefaultOrderGenerator;
@@ -83,7 +86,8 @@ namespace OpenRA
 			"Sequences", "ModelSequences", "Cursors", "Chrome", "Assemblies", "ChromeLayout", "Weapons",
 			"Voices", "Notifications", "Music", "FluentMessages", "TileSets", "ChromeMetrics", "Missions", "Hotkeys",
 			"ServerTraits", "LoadScreen", "DefaultOrderGenerator", "SupportsMapsFrom", "SoundFormats", "SpriteFormats", "VideoFormats",
-			"SpriteSequenceFormat", "TerrainFormat", "RequiresMods", "PackageFormats", "AllowUnusedFluentMessagesInExternalPackages", "RendererConstants"
+			"SpriteSequenceFormat", "TerrainFormat", "RequiresMods", "PackageFormats", "AllowUnusedFluentMessagesInExternalPackages", "RendererConstants",
+			"FluentLanguages"
 		}.ToFrozenSet();
 
 		public readonly FrozenDictionary<string, MiniYaml> GlobalModData;
@@ -132,6 +136,9 @@ namespace OpenRA
 			Notifications = YamlList(yaml, "Notifications");
 			Music = YamlList(yaml, "Music");
 			FluentMessages = YamlList(yaml, "FluentMessages");
+			FluentLanguages = yaml.TryGetValue("FluentLanguages", out var fluentLanguages)
+				? fluentLanguages.Nodes.ToFrozenDictionary(n => n.Key, n => n.Value.Nodes.Select(x => x.Key).ToImmutableArray())
+				: FrozenDictionary<string, ImmutableArray<string>>.Empty;
 			TileSets = YamlList(yaml, "TileSets");
 			ChromeMetrics = YamlList(yaml, "ChromeMetrics");
 			Missions = YamlList(yaml, "Missions");

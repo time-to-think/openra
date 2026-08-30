@@ -319,6 +319,9 @@ namespace OpenRA
 	{
 		public string Platform = "Default";
 
+		[Desc("Fluent language code (e.g. \"en\", \"ko\"). Must be listed under the mod's FluentLanguages to take effect.")]
+		public string Language = "en";
+
 		public bool ViewportEdgeScroll = true;
 		public int ViewportEdgeScrollMargin = 5;
 

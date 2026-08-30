@@ -1,883 +1,883 @@
 ## Buttons
-button-cancel = 취소
-button-retry = 재시도
-button-back = 뒤로
-button-continue = 계속
-button-quit = 종료
+button-cancel = Cancel
+button-retry = Retry
+button-back = Back
+button-continue = Continue
+button-quit = Quit
 
 ## Server Orders
-notification-custom-rules = 이 맵에는 커스텀 규칙이 포함되어 있습니다. 게임 진행 방식이 달라질 수 있습니다.
-notification-two-humans-required = 이 서버에서 경기를 시작하려면 사람 플레이어가 최소 두 명 필요합니다.
-notification-unknown-server-command = 알 수 없는 서버 명령: { $command }.
-notification-admin-start-game = 호스트만 게임을 시작할 수 있습니다.
-notification-no-start-until-required-slots-full = 필수 슬롯이 모두 찰 때까지 게임을 시작할 수 없습니다.
-notification-no-start-without-players = 플레이어 없이 게임을 시작할 수 없습니다.
-notification-insufficient-enabled-spawn-points = 활성화된 시작 위치가 더 필요하여 게임을 시작할 수 없습니다.
-notification-malformed-command = 잘못된 형식의 { $command } 명령입니다.
-notification-state-unchanged-ready = 준비 상태에서는 변경할 수 없습니다.
-notification-invalid-faction-selected = 잘못된 진영을 선택했습니다: { $faction }.
-notification-state-unchanged-game-started = 게임이 시작된 후에는 상태를 변경할 수 없습니다 ({ $command }).
-notification-requires-host = 호스트만 할 수 있습니다.
-notification-invalid-bot-slot = 다른 클라이언트가 있는 슬롯에는 봇을 추가할 수 없습니다.
-notification-invalid-bot-type = 잘못된 봇 유형입니다.
-notification-admin-change-map = 호스트만 맵을 변경할 수 있습니다.
-notification-player-disconnected = { $player }의 연결이 끊겼습니다.
-notification-team-player-disconnected = { $player }(팀 { $team })의 연결이 끊겼습니다.
-notification-observer-disconnected = { $player }(관전자)의 연결이 끊겼습니다.
-notification-unknown-map = 서버에서 맵을 찾을 수 없습니다.
-notification-searching-map = Resource Center에서 맵을 검색하는 중...
-notification-admin-change-configuration = 호스트만 설정을 변경할 수 있습니다.
-notification-changed-map = { $player }이(가) 맵을 { $map }(으)로 변경했습니다.
-notification-hidden-map-has-been-previewed = 이 생성된 맵은 제작 중 관리자가 미리 확인했습니다.
-notification-you-were-kicked = 서버에서 추방되었습니다.
-notification-admin-kicked = { $admin }이(가) { $player }을(를) 서버에서 추방했습니다.
-notification-kicked = { $player }이(가) 서버에서 추방되었습니다.
-notification-temp-ban = { $admin }이(가) { $player }을(를) 서버에서 일시적으로 차단했습니다.
-notification-admin-transfer-admin = 관리자만 다른 플레이어에게 관리자 권한을 넘길 수 있습니다.
-notification-admin-move-spectators = 호스트만 플레이어를 관전자로 옮길 수 있습니다.
-notification-empty-slot = 해당 슬롯이 비어 있습니다.
-notification-move-spectators = { $admin }이(가) { $player }을(를) 관전자로 옮겼습니다.
-notification-nick-changed = { $player }이(가) 이름을 { $name }(으)로 변경했습니다.
-notification-player-dropped = 응답 시간 초과로 플레이어가 게임에서 제외되었습니다.
-notification-connection-problems = { $player }에게 연결 문제가 발생했습니다.
-notification-timeout-dropped = { $player }이(가) 응답 시간 초과로 게임에서 제외되었습니다.
+notification-custom-rules = This map contains custom rules. Game experience may change.
+notification-two-humans-required = This server requires at least two human players to start a match.
+notification-unknown-server-command = Unknown server command: { $command }.
+notification-admin-start-game = Only the host can start the game.
+notification-no-start-until-required-slots-full = Unable to start the game until required slots are full.
+notification-no-start-without-players = Game cannot start without players.
+notification-insufficient-enabled-spawn-points = Unable to start the game until more spawn points are enabled.
+notification-malformed-command = Malformed { $command } command.
+notification-state-unchanged-ready = Cannot change state when marked as ready.
+notification-invalid-faction-selected = Invalid faction selected: { $faction }.
+notification-state-unchanged-game-started = State cannot be changed once the game has started ({ $command }).
+notification-requires-host = Only the host can do that.
+notification-invalid-bot-slot = Cannot add bots to a slot with another client.
+notification-invalid-bot-type = Invalid bot type.
+notification-admin-change-map = Only the host can change the map.
+notification-player-disconnected = { $player } has disconnected.
+notification-team-player-disconnected = { $player } (Team { $team }) has disconnected.
+notification-observer-disconnected = { $player } (Spectator) has disconnected.
+notification-unknown-map = Map was not found on server.
+notification-searching-map = Searching for map on the Resource Center...
+notification-admin-change-configuration = Only the host can change the configuration.
+notification-changed-map = { $player } changed the map to { $map }.
+notification-hidden-map-has-been-previewed = This generated map has been previewed by the admin during creation.
+notification-you-were-kicked = You have been kicked from the server.
+notification-admin-kicked = { $admin } kicked { $player } from the server.
+notification-kicked = { $player } was kicked from the server.
+notification-temp-ban = { $admin } temporarily banned { $player } from the server.
+notification-admin-transfer-admin = Only admins can transfer admin to another player.
+notification-admin-move-spectators = Only the host can move players to spectators.
+notification-empty-slot = No one in that slot.
+notification-move-spectators = { $admin } moved { $player } to spectators.
+notification-nick-changed = { $player } is now known as { $name }.
+notification-player-dropped = A player has been dropped after timing out.
+notification-connection-problems = { $player } is experiencing connection problems.
+notification-timeout-dropped = { $player } has been dropped after timing out.
 notification-timeout-dropped-in =
     { $timeout ->
-        [one] { $player }이(가) { $timeout }초 후 게임에서 제외됩니다.
-       *[other] { $player }이(가) { $timeout }초 후 게임에서 제외됩니다.
+        [one] { $player } will be dropped in { $timeout } second.
+       *[other] { $player } will be dropped in { $timeout } seconds.
     }
-notification-error-game-started = 게임이 이미 시작되었습니다.
-notification-requires-password = 이 서버는 비밀번호가 필요합니다.
-notification-incorrect-password = 비밀번호가 올바르지 않습니다.
-notification-incompatible-mod = 서버가 호환되지 않는 mod를 실행하고 있습니다.
-notification-incompatible-version = 서버가 호환되지 않는 버전을 실행하고 있습니다.
-notification-incompatible-protocol = 서버가 호환되지 않는 프로토콜을 사용하고 있습니다.
-notification-you-were-banned = 서버에서 차단되었습니다.
-notification-you-were-temp-banned = 서버에서 일시적으로 차단되었습니다.
-notification-game-full = 게임 인원이 가득 찼습니다.
-notification-new-admin = 이제 { $player }이(가) 관리자입니다.
-notification-invalid-configuration-command = 잘못된 설정 명령입니다.
-notification-admin-option = 호스트만 해당 옵션을 설정할 수 있습니다.
-notification-error-number-teams = 팀 수를 해석할 수 없습니다: { $raw }.
-notification-admin-kick = 호스트만 플레이어를 추방할 수 있습니다.
-notification-kick-self = 호스트는 자신을 추방할 수 없습니다.
-notification-kick-none = 해당 슬롯이 비어 있습니다.
-notification-no-kick-game-started = 게임이 시작된 후에는 관전자와 패배한 플레이어만 추방할 수 있습니다.
-notification-admin-clear-spawn = 관리자만 시작 위치를 초기화할 수 있습니다.
-notification-spawn-occupied = 다른 플레이어와 같은 시작 위치를 사용할 수 없습니다.
-notification-spawn-locked = 이 시작 위치는 다른 플레이어 슬롯에 고정되어 있습니다.
-notification-admin-lobby-info = 호스트만 로비 정보를 설정할 수 있습니다.
-notification-invalid-lobby-info = 잘못된 로비 정보가 전송되었습니다.
-notification-player-color-terrain = 지형과 덜 비슷하도록 색상이 조정되었습니다.
-notification-player-color-player = 다른 플레이어와 덜 비슷하도록 색상이 조정되었습니다.
-notification-invalid-player-color = 유효한 플레이어 색상을 결정할 수 없습니다. 무작위 색상이 선택되었습니다.
-notification-invalid-error-code = 오류 메시지를 해석하지 못했습니다.
-notification-master-server-connected = 마스터 서버와 통신이 연결되었습니다.
-notification-master-server-error = 마스터 서버와 통신에 실패했습니다.
-notification-game-offline = 게임이 온라인에 공개되지 않았습니다.
-notification-no-port-forward = 인터넷에서 서버 포트에 접근할 수 없습니다.
-notification-blacklisted-server-name = 서버 이름에 금지된 단어가 포함되어 있습니다.
-notification-requires-authentication = 이 서버는 OpenRA 포럼 계정이 있는 플레이어만 참가할 수 있습니다.
-notification-no-permission-to-join = 이 서버에 참가할 권한이 없습니다.
-notification-slot-closed = 호스트가 슬롯을 닫았습니다.
+notification-error-game-started = The game has already started.
+notification-requires-password = Server requires a password.
+notification-incorrect-password = Incorrect password.
+notification-incompatible-mod = Server is running an incompatible mod.
+notification-incompatible-version = Server is running an incompatible version.
+notification-incompatible-protocol = Server is running an incompatible protocol.
+notification-you-were-banned = You have been banned from the server.
+notification-you-were-temp-banned = You have been temporarily banned from the server.
+notification-game-full = The game is full.
+notification-new-admin = { $player } is now the admin.
+notification-invalid-configuration-command = Invalid configuration command.
+notification-admin-option = Only the host can set that option.
+notification-error-number-teams = Could not parse the number of teams: { $raw }.
+notification-admin-kick = Only the host can kick players.
+notification-kick-self = The host cannot kick themselves.
+notification-kick-none = No one in that slot.
+notification-no-kick-game-started = Only spectators and defeated players can be kicked after the game has started.
+notification-admin-clear-spawn = Only admins can clear spawn points.
+notification-spawn-occupied = You cannot occupy the same spawn point as another player.
+notification-spawn-locked = The spawn point is locked to another player slot.
+notification-admin-lobby-info = Only the host can set lobby info.
+notification-invalid-lobby-info = Invalid lobby info sent.
+notification-player-color-terrain = Color was adjusted to be less similar to the terrain.
+notification-player-color-player = Color was adjusted to be less similar to another player.
+notification-invalid-player-color = Unable to determine a valid player color. A random color has been selected.
+notification-invalid-error-code = Failed to parse error message.
+notification-master-server-connected = Master server communication established.
+notification-master-server-error = Master server communication failed.
+notification-game-offline = Game has not been advertised online.
+notification-no-port-forward = Server port is not accessible from the internet.
+notification-blacklisted-server-name = Server name contains a blacklisted word.
+notification-requires-authentication = Server requires players to have an OpenRA forum account.
+notification-no-permission-to-join = You do not have permission to join this server.
+notification-slot-closed = Your slot was closed by the host.
 
 ## ServerOrders, UnitOrders
-notification-joined = { $player }이(가) 게임에 참가했습니다.
-notification-lobby-disconnected = { $player }이(가) 나갔습니다.
+notification-joined = { $player } has joined the game.
+notification-lobby-disconnected = { $player } has left.
 
 ## UnitOrders
-notification-game-has-started = 게임이 시작되었습니다.
-notification-game-paused = { $player }이(가) 게임을 일시 정지했습니다.
-notification-game-unpaused = { $player }이(가) 게임을 재개했습니다.
+notification-game-has-started = The game has started.
+notification-game-paused = The game has been paused by { $player }.
+notification-game-unpaused = The game has been un-paused by { $player }.
 
 ## Server
-notification-game-started = 게임이 시작되었습니다.
+notification-game-started = Game started.
 
 ## PlayerMessageTracker
 notification-chat-temp-disabled =
     { $remaining ->
-        [one] 채팅이 비활성화되었습니다. { $remaining }초 후 다시 시도해 주세요.
-       *[other] 채팅이 비활성화되었습니다. { $remaining }초 후 다시 시도해 주세요.
+        [one] Chat is disabled. Please try again in { $remaining } second.
+       *[other] Chat is disabled. Please try again in { $remaining } seconds.
     }
 
 ## VoteKickTracker
-notification-unable-to-start-a-vote = 투표를 시작할 수 없습니다.
-notification-insufficient-votes-to-kick = { $kickee } 플레이어를 추방하기에 투표 수가 부족합니다.
-notification-kick-already-voted = 이미 투표했습니다.
-notification-vote-kick-started = { $kicker } 플레이어가 { $kickee } 플레이어에 대한 추방 투표를 시작했습니다.
-notification-vote-kick-in-progress = 플레이어 중 { $percentage }%가 { $kickee } 플레이어의 추방에 투표했습니다.
-notification-vote-kick-ended = { $kickee } 플레이어에 대한 추방 투표가 부결되었습니다.
+notification-unable-to-start-a-vote = Unable to start a vote.
+notification-insufficient-votes-to-kick = Insufficient votes to kick player { $kickee }.
+notification-kick-already-voted = You have already voted.
+notification-vote-kick-started = Player { $kicker } has started a vote to kick player { $kickee }.
+notification-vote-kick-in-progress = { $percentage }% of players have voted to kick player { $kickee }.
+notification-vote-kick-ended = Vote to kick player { $kickee } has failed.
 
 ## ActorEditLogic
-label-duplicate-actor-id = 중복된 Actor ID
-label-actor-id = Actor ID 입력
-label-actor-owner = 소유자
+label-duplicate-actor-id = Duplicate Actor ID
+label-actor-id = Enter an Actor ID
+label-actor-owner = Owner
 
 ## ActorSelectorLogic
-label-actor-type = 종류: { $actorType }
+label-actor-type = Type: { $actorType }
 
 ## CommonSelectorLogic
 options-common-selector =
-    .search-results = 검색 결과
-    .all = 전체
-    .multiple = 여러 개
-    .none = 없음
+    .search-results = Search Results
+    .all = All
+    .multiple = Multiple
+    .none = None
 
 ## SaveMapLogic
-label-unpacked-map = 압축 해제됨
+label-unpacked-map = unpacked
 
 dialog-save-map-failed =
-    .title = 맵 저장 실패
-    .prompt = 자세한 내용은 debug.log를 확인하세요.
-    .confirm = 확인
+    .title = Failed to save map
+    .prompt = See debug.log for details.
+    .confirm = OK
 
 dialog-overwrite-map-failed =
-    .title = 경고
-    .prompt = 저장하면 이미 존재하는 맵을
-    덮어쓰게 됩니다.
-    .confirm = 저장
+    .title = Warning
+    .prompt = By saving you will overwrite
+    an already existing map.
+    .confirm = Save
 
 dialog-overwrite-map-outside-edit =
-    .title = 경고
-    .prompt = 에디터 외부에서 맵이 수정되었습니다.
-    저장하면 변경 내용을 덮어쓸 수 있습니다.
-    .confirm = 저장
+    .title = Warning
+    .prompt = The map has been edited from outside the editor.
+    By saving you may overwrite progress.
+    .confirm = Save
 
-notification-save-current-map = 현재 맵을 저장했습니다.
+notification-save-current-map = Saved current map.
 
 ## GameInfoLogic
 menu-game-info =
-    .objectives = 목표
-    .briefing = 브리핑
-    .options = 옵션
-    .debug = 치트
-    .chat = 채팅
+    .objectives = Objectives
+    .briefing = Briefing
+    .options = Options
+    .debug = Cheats
+    .chat = Chat
 
 ## GameInfoObjectivesLogic, GameInfoStatsLogic
-label-mission-in-progress = 진행 중
-label-mission-accomplished = 성공
-label-mission-failed = 실패
+label-mission-in-progress = In progress
+label-mission-accomplished = Accomplished
+label-mission-failed = Failed
 
 ## GameInfoStatsLogic
-label-mute-player = 이 플레이어 음소거
-label-unmute-player = 이 플레이어 음소거 해제
-button-kick-player = 이 플레이어 추방
-button-vote-kick-player = 이 플레이어 추방 투표
+label-mute-player = Mute this player
+label-unmute-player = Unmute this player
+button-kick-player = Kick this player
+button-vote-kick-player = Vote to kick this player
 
 dialog-kick =
-    .title = { $player }을(를) 추방하시겠습니까?
-    .prompt = 이 플레이어는 게임에 다시 참가할 수 없습니다.
-    .confirm = 추방
+    .title = Kick { $player }?
+    .prompt = This player will not be able to rejoin the game.
+    .confirm = Kick
 
 dialog-vote-kick =
-    .title = { $player }에 대한 추방 투표를 시작하시겠습니까?
-    .prompt = 이 플레이어는 게임에 다시 참가할 수 없습니다.
+    .title = Vote to kick { $player }?
+    .prompt = This player will not be able to rejoin the game.
     .prompt-break-bots =
     { $bots ->
-        [one] 게임 관리자를 추방하면 봇 1기도 함께 추방됩니다.
-       *[other] 게임 관리자를 추방하면 봇 { $bots }기도 함께 추방됩니다.
+        [one] Kicking the game admin will also kick 1 bot.
+       *[other] Kicking the game admin will also kick { $bots } bots.
     }
-    .vote-start = 투표 시작
-    .vote-for = 찬성
-    .vote-against = 반대
-    .vote-cancel = 기권
+    .vote-start = Start Vote
+    .vote-for = Vote For
+    .vote-against = Vote Against
+    .vote-cancel = Abstain
 
-notification-vote-kick-disabled = 이 서버에서는 추방 투표가 비활성화되어 있습니다.
+notification-vote-kick-disabled = Vote kick is disabled on this server.
 
 ## GameTimerLogic
-label-paused = 일시 정지
-label-max-speed = 최고 속도
-label-replay-speed = 속도 { $percentage }%
-label-replay-complete = { $percentage }% 완료
+label-paused = Paused
+label-max-speed = Max Speed
+label-replay-speed = { $percentage }% Speed
+label-replay-complete = { $percentage }% complete
 
 ## LobbyLogic, InGameChatLogic
-label-chat-disabled = 채팅 비활성화
+label-chat-disabled = Chat Disabled
 label-chat-availability =
     { $seconds ->
-        [one] { $seconds }초 후 채팅 가능...
-       *[other] { $seconds }초 후 채팅 가능...
+        [one] Chat available in { $seconds } second...
+       *[other] Chat available in { $seconds } seconds...
     }
 
 ## LobbyLogic, ServerListLogic
-label-bot-player = AI 플레이어
+label-bot-player = AI Player
 
 ## LobbyLogic
 notification-lobby-option = { $name }: { $value }.
-notification-lobby-option-changed = { $name }이(가) { $value }(으)로 변경되었습니다.
-notification-map-bots-disabled = 이 맵에서는 봇이 비활성화되어 있습니다.
+notification-lobby-option-changed = { $name } changed to { $value }.
+notification-map-bots-disabled = Bots have been disabled on this map.
 
 ## IngameMenuLogic
 menu-ingame =
-    .leave = 나가기
-    .abort = 미션 중단
-    .restart = 다시 시작
-    .surrender = 항복
-    .load-game = 게임 불러오기
-    .save-game = 게임 저장
-    .music = 음악
-    .settings = 설정
-    .return-to-map = 맵으로 돌아가기
-    .resume = 재개
-    .save-map = 맵 저장
-    .exit-map = 맵 에디터 종료
+    .leave = Leave
+    .abort = Abort Mission
+    .restart = Restart
+    .surrender = Surrender
+    .load-game = Load Game
+    .save-game = Save Game
+    .music = Music
+    .settings = Settings
+    .return-to-map = Return to map
+    .resume = Resume
+    .save-map = Save Map
+    .exit-map = Exit Map Editor
 
 dialog-leave-mission =
-    .title = 미션 나가기
-    .prompt = 이 게임을 나가고 메뉴로 돌아가시겠습니까?
-    .confirm = 나가기
-    .cancel = 머무르기
+    .title = Leave Mission
+    .prompt = Leave this game and return to the menu?
+    .confirm = Leave
+    .cancel = Stay
 
 dialog-restart-mission =
-    .title = 다시 시작
-    .prompt = 정말 다시 시작하시겠습니까?
-    .confirm = 다시 시작
-    .cancel = 머무르기
+    .title = Restart
+    .prompt = Are you sure you want to restart?
+    .confirm = Restart
+    .cancel = Stay
 
 dialog-surrender =
-    .title = 항복
-    .prompt = 정말 항복하시겠습니까?
-    .confirm = 항복
-    .cancel = 머무르기
+    .title = Surrender
+    .prompt = Are you sure you want to surrender?
+    .confirm = Surrender
+    .cancel = Stay
 
 dialog-error-max-player =
-    .title = 오류: 최대 플레이어 수 초과
-    .prompt = 정의된 플레이어가 너무 많습니다 ({ $players }/{ $max }).
-    .confirm = 뒤로
+    .title = Error: Max player count exceeded
+    .prompt = There are too many players defined ({ $players }/{ $max }).
+    .confirm = Back
 
 dialog-exit-map-editor =
-    .title = 맵 에디터 종료
-    .prompt-unsaved = 저장하지 않은 변경 내용을 모두 버리고 종료하시겠습니까?
-    .prompt-deleted = 에디터 외부에서 맵이 삭제되었을 수 있습니다
-    .confirm-anyway = 무시하고 종료
-    .confirm = 종료
+    .title = Exit Map Editor
+    .prompt-unsaved = Exit and lose all unsaved changes?
+    .prompt-deleted = The map may have been deleted outside the editor
+    .confirm-anyway = Exit anyway
+    .confirm = Exit
 
 dialog-play-map-warning =
-    .title = 경고
-    .prompt = 맵이 삭제되었거나 불러올 수 없게 만드는
-    오류가 포함되어 있을 수 있습니다.
-    .cancel = 확인
+    .title = Warning
+    .prompt = The map may have been deleted or contains
+    errors that prevent it from being loaded.
+    .cancel = Okay
 
 dialog-exit-to-map-editor =
-    .title = 미션 나가기
-    .prompt = 이 게임을 나가고 에디터로 돌아가시겠습니까?
-    .confirm = 에디터로 돌아가기
-    .cancel = 머무르기
+    .title = Leave Mission
+    .prompt = Leave this game and return to the editor?
+    .confirm = Back To Editor
+    .cancel = Stay
 
 ## IngamePowerBarLogic
 ## IngamePowerCounterLogic
-label-power-usage = 전력 사용량: { $usage }/{ $capacity }
-label-infinite-power = 무한
+label-power-usage = Power Usage: { $usage }/{ $capacity }
+label-infinite-power = Infinite
 
 ## IngameSiloBarLogic
 ## IngameCashCounterLogic
-label-silo-usage = Silo 사용량: { $usage }/{ $capacity }
+label-silo-usage = Silo Usage: { $usage }/{ $capacity }
 
 ## ObserverShroudSelectorLogic
 options-shroud-selector =
-    .all-players = 모든 플레이어
-    .disable-shroud = 미탐색 지역 해제
-    .other = 기타
+    .all-players = All Players
+    .disable-shroud = Disable Shroud
+    .other = Other
 
 ## ObserverStatsLogic
 options-observer-stats =
-    .none = 정보: 없음
-    .basic = 기본
-    .economy = 경제
-    .production = 생산
-    .support-powers = 지원 능력
-    .combat = 전투
-    .army = 병력
-    .earnings-graph = 수익 (그래프)
-    .army-graph = 병력 (그래프)
+    .none = Information: None
+    .basic = Basic
+    .economy = Economy
+    .production = Production
+    .support-powers = Support Powers
+    .combat = Combat
+    .army = Army
+    .earnings-graph = Earnings (graph)
+    .army-graph = Army (graph)
 
 ## WorldTooltipLogic
-label-unrevealed-terrain = 미탐색 지형
+label-unrevealed-terrain = Unrevealed Terrain
 
 ## KickClientLogic
 dialog-kick-client =
-    .prompt = { $player }을(를) 추방하시겠습니까?
+    .prompt = Kick { $player }?
 
 ## KickSpectatorsLogic
 dialog-kick-spectators =
     .prompt =
     { $count ->
-        [one] 정말 관전자 1명을 추방하시겠습니까?
-       *[other] 정말 관전자 { $count }명을 추방하시겠습니까?
+        [one] Are you sure you want to kick one spectator?
+       *[other] Are you sure you want to kick { $count } spectators?
     }
 
 ## LobbyLogic
 options-slot-admin =
-    .add-bots = 추가
-    .remove-bots = 제거
-    .configure-bots = 봇 설정
-    .teams-count = { $count }개 팀
-    .humans-vs-bots = 사람 대 봇
-    .free-for-all = 개인전
-    .configure-teams = 팀 설정
+    .add-bots = Add
+    .remove-bots = Remove
+    .configure-bots = Configure Bots
+    .teams-count = { $count } Teams
+    .humans-vs-bots = Humans vs Bots
+    .free-for-all = Free for all
+    .configure-teams = Configure Teams
 
 ## LobbyLogic, InGameChatLogic
-button-general-chat = 전체
-button-team-chat = 팀
+button-general-chat = All
+button-team-chat = Team
 
 ## LobbyOptionsLogic, MissionBrowserLogic
-label-not-available = 사용 불가
+label-not-available = Not Available
 
 ## LobbyUtils
 options-lobby-slot =
-    .slot = 슬롯
-    .open = 열림
-    .closed = 닫힘
-    .bots = 봇
-    .bots-disabled = 봇 비활성화
+    .slot = Slot
+    .open = Open
+    .closed = Closed
+    .bots = Bots
+    .bots-disabled = Bots Disabled
 
 ## MapPreviewLogic
-label-connecting = 연결 중...
-label-downloading-map = { $size } kB 다운로드 중
-label-downloading-map-progress = { $size } kB 다운로드 중 ({ $progress }%)
-button-retry-install = 설치 재시도
-button-retry-search = 검색 재시도
+label-connecting = Connecting...
+label-downloading-map = Downloading { $size } kB
+label-downloading-map-progress = Downloading { $size } kB ({ $progress }%)
+button-retry-install = Retry Install
+button-retry-search = Retry Search
 ## also MapChooserLogic
-label-created-by = 제작자: { $author }
+label-created-by = Created by { $author }
 
 ## SpawnSelectorTooltipLogic
-label-disabled-spawn = 비활성화된 시작 위치
-label-available-spawn = 사용 가능한 시작 위치
+label-disabled-spawn = Disabled spawn
+label-available-spawn = Available spawn
 
 ## DisplaySettingsLogic
 options-camera =
-    .close = 가까이
-    .medium = 보통
-    .far = 멀리
-    .furthest = 가장 멀리
+    .close = Close
+    .medium = Medium
+    .far = Far
+    .furthest = Furthest
 
 options-display-mode =
-    .windowed = 창 모드
-    .legacy-fullscreen = 전체 화면 (레거시)
-    .fullscreen = 전체 화면
+    .windowed = Windowed
+    .legacy-fullscreen = Fullscreen (Legacy)
+    .fullscreen = Fullscreen
 
-label-video-display-index = 디스플레이 { $number }
+label-video-display-index = Display { $number }
 
 options-status-bars =
-    .standard = 기본
-    .show-on-damage = 피해 시 표시
-    .always-show = 항상 표시
+    .standard = Standard
+    .show-on-damage = Show On Damage
+    .always-show = Always Show
 
 options-target-lines =
-    .automatic = 자동
-    .manual = 수동
-    .disabled = 사용 안 함
+    .automatic = Automatic
+    .manual = Manual
+    .disabled = Disabled
 
-checkbox-frame-limiter = 프레임 제한 사용 ({ $fps } FPS)
+checkbox-frame-limiter = Enable Frame Limiter ({ $fps } FPS)
 
 ## HotkeysSettingsLogic
-label-original-notice = 기본값은 "{ $key }"입니다
-label-duplicate-notice = { $context } 컨텍스트에서 "{ $key }"에 이미 사용 중입니다
-hotkey-context-any = 모두
+label-original-notice = The default is "{ $key }"
+label-duplicate-notice = This is already used for "{ $key }" in the { $context } context
+hotkey-context-any = Any
 
 ## GameplaySettingsLogic
 auto-save-interval =
-    .disabled = 사용 안 함
+    .disabled = Disabled
     .options =
         { $seconds ->
-            [one] 1초
-           *[other] { $seconds }초
+            [one] 1 second
+           *[other] { $seconds } seconds
         }
     .minute-options =
         { $minutes ->
-            [one] 1분
-           *[other] { $minutes }분
+            [one] 1 minute
+           *[other] { $minutes } minutes
         }
 
-auto-save-max-file-number = { $saves }개 저장
+auto-save-max-file-number = { $saves } saves
 
 ## InputSettingsLogic
 options-mouse-scroll-type =
-    .disabled = 사용 안 함
-    .standard = 기본
-    .inverted = 반전
-    .joystick = 조이스틱
+    .disabled = Disabled
+    .standard = Standard
+    .inverted = Inverted
+    .joystick = Joystick
 
 ## InputSettingsLogic, IntroductionPromptLogic
 options-control-scheme =
-    .classic = 클래식
-    .modern = 모던
-    .otherrts = 기타 RTS
+    .classic = Classic
+    .modern = Modern
+    .otherrts = Other RTS
 
 ## SettingsLogic
 dialog-settings-save =
-    .title = 다시 시작 필요
-    .prompt = 일부 변경 사항은 게임을 다시 시작해야
-    적용됩니다.
-    .cancel = 계속
+    .title = Restart Required
+    .prompt = Some changes will not be applied until
+    the game is restarted.
+    .cancel = Continue
 
 dialog-settings-restart =
-    .title = 지금 다시 시작하시겠습니까?
-    .prompt = 일부 변경 사항은 게임을 다시 시작해야
-    적용됩니다. 지금 다시 시작하시겠습니까?
-    .confirm = 지금 다시 시작
-    .cancel = 나중에 다시 시작
+    .title = Restart Now?
+    .prompt = Some changes will not be applied until
+    the game is restarted. Restart now?
+    .confirm = Restart Now
+    .cancel = Restart Later
 
 dialog-settings-reset =
-    .title = { $panel } 초기화
-    .prompt = 이 패널의 모든 설정을 정말
-    초기화하시겠습니까?
-    .confirm = 초기화
-    .cancel = 취소
+    .title = Reset { $panel }
+    .prompt = Are you sure you want to reset
+    all settings in this panel?
+    .confirm = Reset
+    .cancel = Cancel
 
 ## AssetBrowserLogic
-label-all-packages = 전체 패키지
-label-length-in-seconds = { $length }초
+label-all-packages = All Packages
+label-length-in-seconds = { $length } sec
 
 ## ConnectionLogic
-label-connecting-to-endpoint = { $endpoint }에 연결 중...
-label-could-not-connect-to-target = { $target }에 연결할 수 없습니다
-label-unknown-error = 알 수 없는 오류
-label-password-required = 비밀번호 필요
-label-connection-failed = 연결 실패
-notification-mod-switch-failed = mod 전환에 실패했습니다.
+label-connecting-to-endpoint = Connecting to { $endpoint }...
+label-could-not-connect-to-target = Could not connect to { $target }
+label-unknown-error = Unknown error
+label-password-required = Password Required
+label-connection-failed = Connection Failed
+notification-mod-switch-failed = Failed to switch mod.
 
 ## GameSaveBrowserLogic
 dialog-rename-save =
-    .title = 저장 파일 이름 변경
-    .prompt = 새 파일 이름을 입력하세요:
-    .confirm = 이름 변경
+    .title = Rename Save
+    .prompt = Enter a new file name:
+    .confirm = Rename
 
 dialog-delete-save =
-    .title = 선택한 게임 저장 파일을 삭제하시겠습니까?
-    .prompt = '{ $save }'을(를) 삭제합니다.
-    .confirm = 삭제
+    .title = Delete selected game save?
+    .prompt = Delete '{ $save }'.
+    .confirm = Delete
 
 dialog-delete-all-saves =
-    .title = 모든 게임 저장 파일을 삭제하시겠습니까?
+    .title = Delete all game saves?
     .prompt =
     { $count ->
-        [one] 저장 파일 { $count }개를 삭제합니다.
-       *[other] 저장 파일 { $count }개를 삭제합니다.
+        [one] Delete { $count } save.
+       *[other] Delete { $count } saves.
     }
-    .confirm = 전체 삭제
+    .confirm = Delete All
 
-notification-save-deletion-failed = 저장 파일 '{ $savePath }' 삭제에 실패했습니다. 자세한 내용은 로그를 확인하세요.
+notification-save-deletion-failed = Failed to delete save file '{ $savePath }'. See the logs for details.
 
 dialog-overwrite-save =
-    .title = 저장된 게임을 덮어쓰시겠습니까?
-    .prompt = { $file }을(를) 덮어쓰시겠습니까?
-    .confirm = 덮어쓰기
+    .title = Overwrite saved game?
+    .prompt = Overwrite { $file }?
+    .confirm = Overwrite
 
 ## MainMenuLogic
-label-loading-news = 소식을 불러오는 중
-label-news-retrieval-failed = 소식을 가져오지 못했습니다: { $message }
-label-news-parsing-failed = 소식을 해석하지 못했습니다: { $message }
-label-author-datetime = 작성자 { $author }, { $datetime }
+label-loading-news = Loading news
+label-news-retrieval-failed = Failed to retrieve news: { $message }
+label-news-parsing-failed = Failed to parse news: { $message }
+label-author-datetime = by { $author } at { $datetime }
 
 ## MapChooserLogic
-label-all-maps = 전체 맵
-label-no-matches = 일치하는 항목 없음
+label-all-maps = All Maps
+label-no-matches = No matches
 label-player-count =
     { $players ->
-        [one] 플레이어 { $players }명
-       *[other] 플레이어 { $players }명
+        [one] { $players } Player
+       *[other] { $players } Players
     }
-label-map-size-huge = 매우 큼
-label-map-size-large = 큼
-label-map-size-medium = 보통
-label-map-size-small = 작음
+label-map-size-huge = Huge
+label-map-size-large = Large
+label-map-size-medium = Medium
+label-map-size-small = Small
 label-map-searching-count =
     { $count ->
-        [one] OpenRA Resource Center에서 맵 { $count }개를 검색하는 중...
-       *[other] OpenRA Resource Center에서 맵 { $count }개를 검색하는 중...
+        [one] Searching the OpenRA Resource Center for { $count } map...
+       *[other] Searching the OpenRA Resource Center for { $count } maps...
     }
 label-map-unavailable-count =
     { $count ->
-        [one] OpenRA Resource Center에서 맵 { $count }개를 찾지 못했습니다
-       *[other] OpenRA Resource Center에서 맵 { $count }개를 찾지 못했습니다
+        [one] { $count } map was not found on the OpenRA Resource Center
+       *[other] { $count } maps were not found on the OpenRA Resource Center
     }
 
-notification-map-deletion-failed = 맵 '{ $map }' 삭제에 실패했습니다. 자세한 내용은 debug.log 파일을 확인하세요.
+notification-map-deletion-failed = Failed to delete map '{ $map }'. See the debug.log file for details.
 
 dialog-delete-map =
-    .title = 맵 삭제
-    .prompt = 맵 '{ $title }'을(를) 삭제하시겠습니까?
-    .confirm = 삭제
+    .title = Delete map
+    .prompt = Delete the map '{ $title }'?
+    .confirm = Delete
 
 dialog-delete-all-maps =
-    .title = 맵 삭제
-    .prompt = 이 페이지의 모든 맵을 삭제하시겠습니까?
-    .confirm = 삭제
+    .title = Delete maps
+    .prompt = Delete all maps on this page?
+    .confirm = Delete
 
 options-order-maps =
-    .player-count = 플레이어
-    .title = 제목
-    .date = 날짜
-    .size = 크기
+    .player-count = Players
+    .title = Title
+    .date = Date
+    .size = Size
 
-button-mapchooser-system-maps-tab = 공식 맵
-button-mapchooser-remote-maps-tab = 서버 맵
-button-mapchooser-user-maps-tab = 커스텀 맵
-button-mapchooser-generated-maps-tab = 맵 생성
+button-mapchooser-system-maps-tab = Official Maps
+button-mapchooser-remote-maps-tab = Server Maps
+button-mapchooser-user-maps-tab = Custom Maps
+button-mapchooser-generated-maps-tab = Generate Map
 
 ## MissionBrowserLogic
 dialog-no-video =
-    .title = 영상이 설치되지 않음
+    .title = Video not installed
     .prompt =
-        게임 영상은 "콘텐츠 관리" 메뉴에서
-        설치할 수 있습니다.
-    .cancel = 뒤로
+        The game videos can be installed from the
+        "Manage Content" menu.
+    .cancel = Back
 
 dialog-cant-play-video =
-    .title = 영상을 재생할 수 없음
-    .prompt = 영상 재생 중 문제가 발생했습니다.
-    .cancel = 뒤로
+    .title = Unable to play video
+    .prompt = Something went wrong during video playback.
+    .cancel = Back
 
 ## MusicPlayerLogic
-label-sound-muted = 설정에서 오디오가 음소거되었습니다.
-label-no-song-playing = 재생 중인 곡이 없습니다
+label-sound-muted = Audio has been muted in settings.
+label-no-song-playing = No song is playing
 
 ## MuteHotkeyLogic
-label-audio-muted = 오디오를 음소거했습니다.
-label-audio-unmuted = 오디오 음소거를 해제했습니다.
+label-audio-muted = Audio muted.
+label-audio-unmuted = Audio unmuted.
 
 ## PlayerProfileLogic
-label-loading-player-profile = 플레이어 프로필을 불러오는 중...
-label-loading-player-profile-failed = 플레이어 프로필을 불러오지 못했습니다.
+label-loading-player-profile = Loading player profile...
+label-loading-player-profile-failed = Failed to load player profile.
 
 ## ProductionTooltipLogic, EncyclopediaLogic
-label-requires = { $prerequisites }이(가) 필요합니다.
+label-requires = Requires { $prerequisites }.
 
 ## ReplayBrowserLogic
-label-duration = 진행 시간: { $time }
+label-duration = Duration: { $time }
 
 options-replay-type =
-    .singleplayer = 싱글플레이어
-    .multiplayer = 멀티플레이어
+    .singleplayer = Singleplayer
+    .multiplayer = Multiplayer
 
 options-winstate =
-    .victory = 승리
-    .defeat = 패배
+    .victory = Victory
+    .defeat = Defeat
 
 options-save-type =
-    .autosave = 자동 저장
-    .manual = 수동 저장
+    .autosave = Autosave
+    .manual = Manual save
 
 options-replay-date =
-    .today = 오늘
-    .last-week = 최근 7일
-    .last-fortnight = 최근 14일
-    .last-month = 최근 30일
+    .today = Today
+    .last-week = Last 7 days
+    .last-fortnight = Last 14 days
+    .last-month = Last 30 days
 
 options-replay-duration =
-    .very-short = 5분 미만
-    .short = 짧음 (10분)
-    .medium = 보통 (30분)
-    .long = 김 (60분 이상)
+    .very-short = Under 5 min
+    .short = Short (10 min)
+    .medium = Medium (30 min)
+    .long = Long (60+ min)
 
 dialog-rename-replay =
-    .title = 리플레이 이름 변경
-    .prompt = 새 파일 이름을 입력하세요:
-    .confirm = 이름 변경
+    .title = Rename Replay
+    .prompt = Enter a new file name:
+    .confirm = Rename
 
 dialog-delete-replay =
-    .title = 선택한 리플레이를 삭제하시겠습니까?
-    .prompt = 리플레이 { $replay }을(를) 삭제하시겠습니까?
-    .confirm = 삭제
+    .title = Delete selected replay?
+    .prompt = Delete replay { $replay }?
+    .confirm = Delete
 
 dialog-delete-all-replays =
-    .title = 선택한 리플레이를 모두 삭제하시겠습니까?
+    .title = Delete all selected replays?
     .prompt =
     { $count ->
-        [one] 리플레이 { $count }개를 삭제합니다.
-       *[other] 리플레이 { $count }개를 삭제합니다.
+        [one] Delete { $count } replay.
+       *[other] Delete { $count } replays.
     }
-    .confirm = 전체 삭제
+    .confirm = Delete All
 
-notification-replay-deletion-failed = 리플레이 파일 '{ $file }' 삭제에 실패했습니다. 자세한 내용은 debug.log 파일을 확인하세요.
+notification-replay-deletion-failed = Failed to delete replay file '{ $file }'. See the debug.log file for details.
 
 ## ReplayUtils
--incompatible-replay-recorded = 이 리플레이는
+-incompatible-replay-recorded = It was recorded with
 
 dialog-incompatible-replay =
-    .title = 호환되지 않는 리플레이
-    .prompt = 리플레이 메타데이터를 읽을 수 없습니다.
-    .confirm = 확인
-    .prompt-unknown-version = { -incompatible-replay-recorded } 알 수 없는 버전으로 기록되었습니다.
-    .prompt-unknown-mod = { -incompatible-replay-recorded } 알 수 없는 mod로 기록되었습니다.
-    .prompt-unavailable-mod = { -incompatible-replay-recorded } 사용할 수 없는 mod로 기록되었습니다: { $mod }.
-    .prompt-incompatible-version = { -incompatible-replay-recorded } 호환되지 않는 버전으로 기록되었습니다:
+    .title = Incompatible Replay
+    .prompt = Replay metadata could not be read.
+    .confirm = OK
+    .prompt-unknown-version = { -incompatible-replay-recorded } an unknown version.
+    .prompt-unknown-mod = { -incompatible-replay-recorded } an unknown mod.
+    .prompt-unavailable-mod = { -incompatible-replay-recorded } an unavailable mod: { $mod }.
+    .prompt-incompatible-version = { -incompatible-replay-recorded } an incompatible version:
     { $version }.
-    .prompt-unavailable-map = { -incompatible-replay-recorded } 사용할 수 없는 맵으로 기록되었습니다:
+    .prompt-unavailable-map = { -incompatible-replay-recorded } an unavailable map:
     { $map }.
 
 # SelectUnitsByTypeHotkeyLogic
-nothing-selected = 선택된 대상이 없습니다.
+nothing-selected = Nothing selected.
 
 ## SelectUnitsByTypeHotkeyLogic, SelectAllUnitsHotkeyLogic
 selected-units-across-screen =
     { $units ->
-        [one] 화면에서 유닛 1기를 선택했습니다.
-       *[other] 화면에서 유닛 { $units }기를 선택했습니다.
+        [one] Selected one unit across screen.
+       *[other] Selected { $units } units across screen.
     }
 
 selected-units-across-map =
     { $units ->
-        [one] 맵에서 유닛 1기를 선택했습니다.
-       *[other] 맵에서 유닛 { $units }기를 선택했습니다.
+        [one] Selected one unit across map.
+       *[other] Selected { $units } units across map.
     }
 
 ## ServerCreationLogic
-label-internet-server-nat-A = 인터넷 서버 (UPnP/NAT-PMP
-label-internet-server-nat-B-enabled = 사용
-label-internet-server-nat-B-not-supported = 지원 안 함
-label-internet-server-nat-B-disabled = 사용 안 함
+label-internet-server-nat-A = Internet Server (UPnP/NAT-PMP
+label-internet-server-nat-B-enabled = Enabled
+label-internet-server-nat-B-not-supported = Not Supported
+label-internet-server-nat-B-disabled = Disabled
 label-internet-server-nat-C = ):
 
-label-local-server = 로컬 서버:
+label-local-server = Local Server:
 
 dialog-server-creation-failed =
-    .prompt = 포트 { $port }에서 수신 대기할 수 없습니다.
-    .prompt-port-used = 해당 포트가 이미 사용 중인지 확인하세요.
-    .prompt-error = 오류: "{ $message }" ({ $code }).
-    .title = 서버 만들기 실패
-    .cancel = 뒤로
+    .prompt = Could not listen on port { $port }.
+    .prompt-port-used = Check if the port is already being used.
+    .prompt-error = Error is: "{ $message }" ({ $code }).
+    .title = Server Creation Failed
+    .cancel = Back
 
 ## ServerListLogic
 label-players-online-count =
     { $players ->
-        [one] 접속 중인 플레이어 { $players }명
-       *[other] 접속 중인 플레이어 { $players }명
+        [one] { $players } Player Online
+       *[other] { $players } Players Online
     }
 
-label-search-status-failed = 서버 목록을 조회하지 못했습니다.
-label-search-status-no-games = 게임을 찾지 못했습니다. 필터를 변경해 보세요.
-label-no-server-selected = 선택된 서버 없음
+label-search-status-failed = Failed to query server list.
+label-search-status-no-games = No games found. Try changing filters.
+label-no-server-selected = No Server Selected
 
-label-map-status-searching = 검색 중...
-label-map-classification-unknown = 알 수 없는 맵
+label-map-status-searching = Searching...
+label-map-classification-unknown = Unknown Map
 
 label-players-count =
     { $players ->
-        [0] 플레이어 없음
-        [one] 플레이어 1명
-       *[other] 플레이어 { $players }명
+        [0] No Players
+        [one] One Player
+       *[other] { $players } Players
     }
 
 label-bots-count =
     { $bots ->
-        [0] 봇 없음
-        [one] 봇 1기
-       *[other] 봇 { $bots }기
+        [0] No Bots
+        [one] One Bot
+       *[other] { $bots } Bots
     }
 
 ## ServerListLogic, ReplayBrowserLogic, ObserverShroudSelectorLogic
-label-players = 플레이어
+label-players = Players
 
 ## ServerListLogic, GameInfoStatsLogic
-label-spectators = 관전자
+label-spectators = Spectators
 label-spectators-count =
     { $spectators ->
-        [0] 관전자 없음
-        [one] 관전자 1명
-       *[other] 관전자 { $spectators }명
+        [0] No Spectators
+        [one] One Spectator
+       *[other] { $spectators } Spectators
     }
 
 ## ServerlistLogic, GameInfoStatsLogic, ObserverShroudSelectorLogic, SpawnSelectorTooltipLogic, ReplayBrowserLogic
-label-team-name = 팀 { $team }
-label-no-team = 팀 없음
+label-team-name = Team { $team }
+label-no-team = No Team
 
-label-playing = 진행 중
-label-waiting = 대기 중
+label-playing = Playing
+label-waiting = Waiting
 
 label-other-players-count =
     { $players ->
-        [one] 다른 플레이어 1명
-       *[other] 다른 플레이어 { $players }명
+        [one] One other player
+       *[other] { $players } other players
     }
 
 label-in-progress-for =
     { $minutes ->
-        [0] 진행 시간 1분 미만.
-        [one] { $minutes }분째 진행 중.
-       *[other] { $minutes }분째 진행 중.
+        [0] In progress for less than a minute.
+        [one] In progress for { $minutes } minute.
+       *[other] In progress for { $minutes } minutes.
     }
 
-label-password-protected = 비밀번호 보호됨
-label-waiting-for-players = 플레이어 대기 중
-label-server-shutting-down = 서버 종료 중
-label-unknown-server-state = 알 수 없는 서버 상태
+label-password-protected = Password protected
+label-waiting-for-players = Waiting for players
+label-server-shutting-down = Server shutting down
+label-unknown-server-state = Unknown server state
 
 ## Game
-notification-saved-screenshot = 스크린샷 { $filename }을(를) 저장했습니다
+notification-saved-screenshot = Saved screenshot { $filename }
 
 ## ChatCommands
-notification-invalid-command = { $name }은(는) 유효한 명령이 아닙니다.
+notification-invalid-command = { $name } is not a valid command.
 
 ## DebugMenuLogic
-tooltip-debug-command = 치트 명령: { $command }
+tooltip-debug-command = Cheat command: { $command }
 
 ## DebugVisualizationCommands
-description-combat-geometry = 전투 지오메트리 오버레이를 켜거나 끕니다.
-description-render-geometry = 렌더 지오메트리 오버레이를 켜거나 끕니다.
-description-screen-map-overlay = 화면 맵 오버레이를 켜거나 끕니다.
-description-depth-buffer = 깊이 버퍼 오버레이를 켜거나 끕니다.
-description-actor-tags-overlay = actor 태그 오버레이를 켜거나 끕니다.
+description-combat-geometry = toggles combat geometry overlay.
+description-render-geometry = toggles render geometry overlay.
+description-screen-map-overlay = toggles screen map overlay.
+description-depth-buffer = toggles depth buffer overlay.
+description-actor-tags-overlay = toggles actor tags overlay.
 
 ## DevCommands
-notification-invalid-cash-amount = 잘못된 자금 액수입니다.
-description-toggle-visibility = 시야 판정과 미니맵을 켜거나 끕니다.
-description-give-cash = 기본 액수 또는 지정한 액수의 자금을 지급합니다.
-description-give-cash-all = 기본 액수 또는 지정한 액수의 자금을 모든 플레이어와 AI에게 지급합니다.
-description-instant-building = 즉시 건설을 켜거나 끕니다.
-description-build-anywhere = 어디에나 건설하는 기능을 켜거나 끕니다.
-description-unlimited-power = 무한 전력을 켜거나 끕니다.
-description-enable-tech = 모든 것을 건설하는 기능을 켜거나 끕니다.
-description-fast-charge = 지원 능력의 거의 즉시 충전을 켜거나 끕니다.
-description-dev-cheat-all = 모든 치트를 켜거나 끄고 수고비로 자금을 지급합니다.
-description-dev-crash = 게임을 강제로 종료시킵니다.
-description-levelup-actor = 선택한 actor에 지정한 수만큼 레벨을 추가합니다.
-description-player-experience = 로컬 플레이어에게 지정한 양의 플레이어 경험치를 추가합니다.
-description-power-outage = 로컬 플레이어에게 5초간 정전을 발생시킵니다.
-description-grow-resources = 맵의 자원을 성장시킵니다.
-description-clear-shroud = 맵 전체를 드러냅니다.
-description-reset-shroud = 맵 전체를 다시 가립니다.
-description-heal-selected-actors = 선택한 actor를 치료합니다.
-description-kill-selected-actors = 선택한 actor를 죽입니다.
-description-dispose-selected-actors = 선택한 actor를 제거합니다.
+notification-invalid-cash-amount = Invalid cash amount.
+description-toggle-visibility = toggles visibility checks and minimap.
+description-give-cash = gives the default or specified amount of money.
+description-give-cash-all = gives the default or specified amount of money to all players and AI.
+description-instant-building = toggles instant building.
+description-build-anywhere = toggles the ability to build anywhere.
+description-unlimited-power = toggles infinite power.
+description-enable-tech = toggles the ability to build everything.
+description-fast-charge = toggles near-instant support power charging.
+description-dev-cheat-all = toggles all cheats and gives you some cash for your trouble.
+description-dev-crash = crashes the game.
+description-levelup-actor = adds a specified number of levels to the selected actors.
+description-player-experience = adds a specified amount of player experience to the local player.
+description-power-outage = causes a 5-second power outage for the local player.
+description-grow-resources = grows resources on the map.
+description-clear-shroud = reveals the entire map.
+description-reset-shroud = hides the entire map.
+description-heal-selected-actors = heals selected actors.
+description-kill-selected-actors = kills selected actors.
+description-dispose-selected-actors = disposes selected actors.
 
 ## DevCommands, DebugVisualizationCommands, CustomTerrainDebugOverlay, ActorMapOverlay, CellTriggerOverlay, ExitsDebugOverlayManager, HierarchicalPathFinderOverlay, PathFinderOverlay, TerrainGeometryOverlay
-notification-cheats-disabled = 치트가 비활성화되어 있습니다.
+notification-cheats-disabled = Cheats are disabled.
 
 ## HelpCommands
-notification-available-commands = 사용할 수 있는 명령은 다음과 같습니다:
-description-no-description = 설명이 없습니다.
-description-help-description = 여러 명령에 대한 유용한 정보를 제공합니다.
+notification-available-commands = Here are the available commands:
+description-no-description = no description available.
+description-help-description = provides useful info about various commands.
 
 ## PlayerCommands
-description-pause-description = 게임을 일시 정지하거나 재개합니다.
-description-surrender-description = 모든 것을 자폭시키고 게임에서 패배합니다.
+description-pause-description = pause or unpause the game.
+description-surrender-description = self-destruct everything and lose the game.
 
 ## DeveloperMode, GainsExperience, PowerManager
-notification-cheat-used = 치트 사용: { $cheat } — { $player }{ $suffix }.
+notification-cheat-used = Cheat used: { $cheat } by { $player }{ $suffix }.
 
 ## DeveloperMode, DebugVisualizationCommands, CustomTerrainDebugOverlay, ActorMapOverlay, CellTriggerOverlay, ExitsDebugOverlayManager, HierarchicalPathFinderOverlay, PathFinderOverlay, TerrainGeometryOverlay
-notification-cheat-enabled = 치트 활성화: { $cheat } — { $player }.
-notification-cheat-disabled = 치트 비활성화: { $cheat } — { $player }.
+notification-cheat-enabled = Cheat enabled: { $cheat } by { $player }.
+notification-cheat-disabled = Cheat disabled: { $cheat } by { $player }.
 
 ## CustomTerrainDebugOverlay
-description-custom-terrain-debug-overlay = 커스텀 지형 디버그 오버레이를 켜거나 끕니다.
+description-custom-terrain-debug-overlay = toggles the custom terrain debug overlay.
 
 ## CellTriggerOverlay
-description-cell-triggers-overlay = 스크립트 트리거 오버레이를 켜거나 끕니다.
+description-cell-triggers-overlay = toggles the script triggers overlay.
 
 ## HierarchicalPathFinderOverlay
-description-hpf-debug-overlay = 계층적 길찾기 오버레이를 켜거나 끕니다.
+description-hpf-debug-overlay = toggles the hierarchical pathfinder overlay.
 
 ## PathFinderOverlay
-description-path-debug-overlay = 경로 탐색 시각화를 켜거나 끕니다.
+description-path-debug-overlay = toggles a visualization of path searching.
 
 ## TerrainGeometryOverlay
-description-terrain-geometry-overlay = 지형 지오메트리 오버레이를 켜거나 끕니다.
+description-terrain-geometry-overlay = toggles the terrain geometry overlay.
 
 ## ActorMapOverlay
-description-actor-map-overlay = actor 맵 오버레이를 켜거나 끕니다.
+description-actor-map-overlay = toggles the actor map overlay.
 
 ## MapOptions, MissionBrowserLogic
 options-game-speed =
-    .slowest = 가장 느림
-    .slower = 느림
-    .normal = 보통
-    .fast = 빠름
-    .faster = 더 빠름
-    .fastest = 가장 빠름
+    .slowest = Slowest
+    .slower = Slower
+    .normal = Normal
+    .fast = Fast
+    .faster = Faster
+    .fastest = Fastest
 
 ## TimeLimitManager
 options-time-limit =
-    .no-limit = 제한 없음
+    .no-limit = No limit
     .options =
         { $minutes ->
-            [one] { $minutes }분
-           *[other] { $minutes }분
+            [one] { $minutes } minute
+           *[other] { $minutes } minutes
         }
 
-notification-time-limit-expired = 제한 시간이 종료되었습니다.
+notification-time-limit-expired = Time limit has expired.
 
 ## EditorActorBrush
-notification-added-actor = { $name }을(를) 추가했습니다 ({ $id })
+notification-added-actor = Added { $name } ({ $id })
 
 ## EditorCopyPasteBrush
-notification-copied-tiles = 타일 { $tiles }개를 복사했습니다
-notification-copied-actors = actor { $actors }개를 복사했습니다
-notification-copied-tiles-actors = 타일 { $tiles }개와 actor { $actors }개를 복사했습니다
+notification-copied-tiles = Copied { $tiles } tiles
+notification-copied-actors = Copied { $actors } actors
+notification-copied-tiles-actors = Copied { $tiles } tiles and { $actors } actors
 
 ## EditorDefaultBrush
-notification-selected-area = 영역 { $x },{ $y } ({ $width },{ $height })을(를) 선택했습니다
-notification-removed-area = 영역 { $x },{ $y } ({ $width },{ $height })을(를) 제거했습니다
-notification-selected-actor = actor { $id }을(를) 선택했습니다
-notification-cleared-selection = 선택을 해제했습니다
-notification-removed-actor = { $name }을(를) 제거했습니다 ({ $id })
-notification-removed-resource = { $type }을(를) 제거했습니다
-notification-moved-actor = { $id }을(를) { $x1 },{ $y1 }에서 { $x2 },{ $y2 }(으)로 옮겼습니다
+notification-selected-area = Selected area { $x },{ $y } ({ $width },{ $height })
+notification-removed-area = Removed area { $x },{ $y } ({ $width },{ $height })
+notification-selected-actor = Selected actor { $id }
+notification-cleared-selection = Cleared selection
+notification-removed-actor = Removed { $name } ({ $id })
+notification-removed-resource = Removed { $type }
+notification-moved-actor = Moved { $id } from { $x1 },{ $y1 } to { $x2 },{ $y2 }
 
 ## EditorResourceBrush
 notification-added-resource =
     { $count ->
-       [one] { $type } 1칸을 추가했습니다
-      *[other] { $type } { $count }칸을 추가했습니다
+       [one] Added one cell of { $type }
+      *[other] Added { $count } cells of { $type }
     }
 
 ## EditorTileBrush
-notification-added-tile = 타일 { $id }을(를) 추가했습니다
-notification-filled-tile = 타일 { $id }(으)로 채웠습니다
+notification-added-tile = Added tile { $id }
+notification-filled-tile = Filled with tile { $id }
 
 ## EditorMarkerLayerBrush
 notification-added-marker-tiles-markers =
-    .red = 빨강
-    .orange = 주황
-    .yellow = 노랑
-    .green = 초록
-    .cyan = 청록
-    .blue = 파랑
-    .purple = 보라
-    .magenta = 자홍
+    .red = red
+    .orange = orange
+    .yellow = yellow
+    .green = green
+    .cyan = cyan
+    .blue = blue
+    .purple = purple
+    .magenta = magenta
 notification-added-marker-tiles =
     { $count ->
-       [one] { $type } 표식 타일을 추가했습니다
-      *[other] { $type } 표식 타일 { $count }개를 추가했습니다
+       [one] Added { $type } marker tile
+      *[other] Added { $count } { $type } marker tiles
     }
 notification-removed-marker-tiles =
     { $count ->
-       [one] 표식 타일을 제거했습니다
-      *[other] 표식 타일 { $count }개를 제거했습니다
+       [one] Removed marker tile
+      *[other] Removed { $count } marker tiles
     }
 notification-cleared-selected-marker-tiles =
     { $count ->
-       [one] { $type } 표식 타일을 지웠습니다
-      *[other] { $type } 표식 타일 { $count }개를 지웠습니다
+       [one] Cleared { $type } marker tile
+      *[other] Cleared { $count } { $type } marker tiles
     }
-notification-cleared-all-marker-tiles = 표식 타일 { $count }개를 지웠습니다
+notification-cleared-all-marker-tiles = Cleared { $count } marker tiles
 
 ## EditorActionManager
-notification-opened = 열기
+notification-opened = Opened
 
 ## MapOverlaysLogic
 mirror-mode =
-    .none = 없음
-    .flip = 뒤집기
-    .rotate = 회전
+    .none = None
+    .flip = Flip
+    .rotate = Rotate
 
 ## ActorEditLogic
-notification-edited-actor = { $name }을(를) 편집했습니다 ({ $id })
-notification-edited-actor-id = { $name }을(를) 편집했습니다 ({ $old-id }-> { $new-id })
+notification-edited-actor = Edited { $name } ({ $id })
+notification-edited-actor-id = Edited { $name } ({ $old-id }-> { $new-id })
 
 ## ConquestVictoryConditions, StrategicVictoryConditions
-notification-player-is-victorious = { $player }이(가) 승리했습니다.
-notification-player-is-defeated = { $player }이(가) 패배했습니다.
+notification-player-is-victorious = { $player } is victorious.
+notification-player-is-defeated = { $player } is defeated.
 
 ## OrderManager
-notification-desync-compare-logs = { $frame } 프레임에서 동기화가 어긋났습니다.
-    syncreport.log를 다른 플레이어와 비교하세요.
+notification-desync-compare-logs = Out of sync in frame { $frame }.
+    Compare syncreport.log with other players.
 
 ## WidgetUtils
-label-win-state-won = 승리
-label-win-state-lost = 패배
-label-client-state-disconnected = 이탈
+label-win-state-won = Won
+label-win-state-lost = Lost
+label-client-state-disconnected = Gone
 
 ## Player
 enumerated-bot-name =
@@ -1137,15 +1137,15 @@ keycode =
     .mouse5 = Mouse 5
 
 ## MapGeneratorToolLogic
-notification-map-generator-generated = { $name }을(를) 사용해 생성했습니다
+notification-map-generator-generated = Generated using { $name }
 
 dialog-notification-map-generator-failed =
-    .title = 맵 생성 실패
-    .prompt = 자세한 내용은 debug.log를 확인하세요.
-    .cancel = 닫기
+    .title = Map generation failed
+    .prompt = See debug.log for details.
+    .cancel = Dismiss
 
 ## EditorTilingPathBrush
-notification-tiling-path-started = 타일 경로를 시작했습니다
-notification-tiling-path-updated = 타일 경로를 갱신했습니다
-notification-tiling-path-reset = 타일 경로를 취소했습니다
-notification-tiling-path-painted = 타일 경로를 그렸습니다
+notification-tiling-path-started = Started tiling path
+notification-tiling-path-updated = Updated tiling path
+notification-tiling-path-reset = Discarded tiling path
+notification-tiling-path-painted = Painted tiling path

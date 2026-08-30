@@ -90,6 +90,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 		readonly GameSettings gameSettings;
 		readonly GraphicSettings graphicSettings;
 		static GraphicSettings originalGraphicSettings;
+		static string originalLanguage;
 
 		readonly string showOnDamage;
 		readonly string alwaysShow;
@@ -111,6 +112,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 			gameSettings = modData.GetSettings<GameSettings>();
 			graphicSettings = modData.GetSettings<GraphicSettings>();
 			originalGraphicSettings ??= graphicSettings.Clone();
+			originalLanguage ??= gameSettings.Language;
 
 			legacyFullscreen = FluentProvider.GetMessage(LegacyFullscreen);
 			fullscreen = FluentProvider.GetMessage(Fullscreen);
@@ -217,6 +219,16 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 				Game.Renderer.SetVSyncEnabled(graphicSettings.VSync);
 			};
 
+			var languageDropdown = panel.GetOrNull<DropDownButtonWidget>("LANGUAGE_DROPDOWN");
+			if (languageDropdown != null)
+			{
+				var languages = modData.Languages.ToList();
+				var languageLabel = new CachedTransform<string, string>(GetLanguageName);
+				languageDropdown.OnMouseDown = _ => ShowLanguageDropdown(languageDropdown, languages, gameSettings);
+				languageDropdown.GetText = () => languageLabel.Update(gameSettings.Language);
+				languageDropdown.IsDisabled = () => languages.Count < 2;
+			}
+
 			var uiScaleDropdown = panel.Get<DropDownButtonWidget>("UI_SCALE_DROPDOWN");
 			var uiScaleLabel = new CachedTransform<float, string>(s => $"{(int)(100 * s)}%");
 			uiScaleDropdown.OnMouseDown = _ => ShowUIScaleDropdown(uiScaleDropdown, graphicSettings);
@@ -257,6 +269,7 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 
 			var restartDesc = panel.Get("VIDEO_RESTART_REQUIRED_DESC");
 			restartDesc.IsVisible = () => graphicSettings.Mode != originalGraphicSettings.Mode ||
+				gameSettings.Language != originalLanguage ||
 				graphicSettings.VideoDisplay != originalGraphicSettings.VideoDisplay ||
 				graphicSettings.GLProfile != originalGraphicSettings.GLProfile ||
 				(graphicSettings.Mode == WindowMode.Windowed && (origWidthText != windowWidth.Text || origHeightText != windowHeight.Text));
@@ -361,6 +374,35 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 				transientsCheckbox.IsChecked = () => gameSettings.TextNotificationPoolFilters.HasFlag(TextNotificationPoolFilters.Transients);
 				transientsCheckbox.OnClick = () => ToggleFilterFlag(TextNotificationPoolFilters.Transients);
 			}
+		}
+
+		static string GetLanguageName(string code)
+		{
+			try
+			{
+				var name = CultureInfo.GetCultureInfo(code).NativeName;
+				return string.IsNullOrEmpty(name) ? code : char.ToUpperInvariant(name[0]) + name[1..];
+			}
+			catch (CultureNotFoundException)
+			{
+				return code;
+			}
+		}
+
+		static void ShowLanguageDropdown(DropDownButtonWidget dropdown, IReadOnlyList<string> languages, GameSettings gameSettings)
+		{
+			ScrollItemWidget SetupItem(string code, ScrollItemWidget itemTemplate)
+			{
+				var item = ScrollItemWidget.Setup(itemTemplate,
+					() => gameSettings.Language == code,
+					() => gameSettings.Language = code);
+
+				var label = GetLanguageName(code);
+				item.Get<LabelWidget>("LABEL").GetText = () => label;
+				return item;
+			}
+
+			dropdown.ShowDropDown("LABEL_DROPDOWN_TEMPLATE", 500, languages, SetupItem);
 		}
 
 		static void ShowStatusBarsDropdown(DropDownButtonWidget dropdown, GameSettings gameSettings)

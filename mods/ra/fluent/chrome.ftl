@@ -6,54 +6,54 @@ label-economy-stats-derricks-header = Oil Derricks
 
 ## ingame-player.yaml
 button-command-bar-force-move =
-    .tooltip = 강제 이동
+    .tooltip = Force Move
     .tooltipdesc =
-    선택한 유닛이 지정한 위치로 이동합니다
-     - 대상에 대한 기본 행동이 억제됩니다
-     - 차량은 목표 위치의 적을 밟아 뭉개려 합니다
-     - 헬리콥터는 목표 위치에 착륙합니다
-     - Chrono Tank는 목표 위치로 순간이동합니다
+    Selected units will move to the desired location
+     - Default activity for the target is suppressed
+     - Vehicles will attempt to crush enemies at the target location
+     - Helicopters will land at the target location
+     - Chrono Tanks will teleport towards the target location
 
-    아이콘을 좌클릭한 뒤 대상을 우클릭합니다.
-    유닛에 명령하는 동안 <(Alt)>를 누르면 일시적으로 활성화됩니다.
+    Left-click icon then right-click on target.
+    Hold <(Alt)> to activate temporarily while commanding units.
 
 button-command-bar-force-attack =
-    .tooltip = 강제 공격
+    .tooltip = Force Attack
     .tooltipdesc =
-    선택한 유닛이 지정한 유닛이나 위치를 공격합니다
-     - 대상에 대한 기본 행동이 억제됩니다
-     - 자신이나 동맹 병력도 대상으로 지정할 수 있습니다
-     - 장거리 포병 유닛은 유닛과 건물을 무시하고
-       항상 위치를 대상으로 삼습니다
+    Selected units will attack the targeted unit or location
+     - Default activity for the target is suppressed
+     - Allows targeting of own or ally forces
+     - Long-range artillery units will always target the
+       location, ignoring units and buildings
 
-    아이콘을 좌클릭한 뒤 대상을 우클릭합니다.
-    유닛에 명령하는 동안 <(Ctrl)>을 누르면 일시적으로 활성화됩니다.
+    Left-click icon then right-click on target.
+    Hold <(Ctrl)> to activate temporarily while commanding units.
 
 button-command-bar-deploy =
-    .tooltip = 배치
+    .tooltip = Deploy
     .tooltipdesc =
-    선택한 유닛이 각자의 기본 배치 행동을 수행합니다
-     - MCV는 Construction Yard로 전개됩니다
-     - Construction Yard는 다시 MCV로 접힙니다
-     - 수송 유닛은 탑승 인원을 내립니다
-     - Demolition Truck과 MAD Tank는 자폭합니다
-     - Minelayer는 지뢰를 설치합니다
-     - 항공기는 기지로 귀환합니다
+    Selected units will perform their default deploy activity
+     - MCVs will unpack into a Construction Yard
+     - Construction Yards will re-pack into a MCV
+     - Transports will unload their passengers
+     - Demolition Trucks and MAD Tanks will self-destruct
+     - Minelayers will deploy a mine
+     - Aircraft will return to base
 
-    선택한 유닛에 즉시 적용됩니다.
+    Acts immediately on selected units.
 
 
-button-top-buttons-beacon-tooltip = 신호탄 배치
-button-top-buttons-sell-tooltip = 판매
-button-top-buttons-power-tooltip = 전력 차단
-button-top-buttons-repair-tooltip = 수리
+button-top-buttons-beacon-tooltip = Place Beacon
+button-top-buttons-sell-tooltip = Sell
+button-top-buttons-power-tooltip = Power Down
+button-top-buttons-repair-tooltip = Repair
 
-button-production-types-building-tooltip = 건물
-button-production-types-defense-tooltip = 방어
-button-production-types-infantry-tooltip = 보병
-button-production-types-vehicle-tooltip = 차량
-button-production-types-aircraft-tooltip = 항공
-button-production-types-naval-tooltip = 해상
+button-production-types-building-tooltip = Buildings
+button-production-types-defense-tooltip = Defense
+button-production-types-infantry-tooltip = Infantry
+button-production-types-vehicle-tooltip = Vehicles
+button-production-types-aircraft-tooltip = Aircraft
+button-production-types-naval-tooltip = Naval
 
 ## ingame-debug.yaml
-button-debug-panel-power-outage = 정전
+button-debug-panel-power-outage = Power Outage

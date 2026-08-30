@@ -156,6 +156,14 @@ FluentMessages:
 	cnc|fluent/hotkeys.ftl
 	cnc|fluent/rules.ftl
 
+FluentLanguages:
+	ko:
+		common|fluent/ko/common.ftl
+		common|fluent/ko/chrome.ftl
+		common|fluent/ko/ingame-debug.ftl
+		common|fluent/ko/hotkeys.ftl
+		common|fluent/ko/rules.ftl
+
 AllowUnusedFluentMessagesInExternalPackages: false
 
 Voices:
