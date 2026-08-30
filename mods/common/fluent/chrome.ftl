@@ -458,11 +458,11 @@ checkbox-edgescroll-container = Screen Edge Panning
 
 ## mainmenu.yaml
 label-main-menu-title = OpenRA
-label-singleplayer-title = Singleplayer
-button-extras-title = Extras
-button-main-menu-content = Manage Content
-button-singleplayer-menu-skirmish = Skirmish
-button-singleplayer-menu-load = Load
+label-singleplayer-title = 싱글플레이어
+button-extras-title = 기타
+button-main-menu-content = 콘텐츠 관리
+button-singleplayer-menu-skirmish = 스커미시
+button-singleplayer-menu-load = 불러오기
 button-extras-menu-replays = Replays
 label-map-editor-title = Map Editor
 button-extras-menu-assetbrowser = Asset Browser
@@ -473,13 +473,13 @@ label-update-notice-a = You are running an outdated version of OpenRA.
 label-update-notice-b = Download the latest version from www.openra.net
 
 ## mainmenu.yaml, missionbrowser.yaml
-label-missions-title = Missions
+label-missions-title = 미션
 
 ## mainmenu.yaml, multiplayer-browser.yaml
-label-multiplayer-title = Multiplayer
+label-multiplayer-title = 멀티플레이어
 
 ## mainmenu.yaml, settings.yaml
-button-settings-title = Settings
+button-settings-title = 설정
 
 ## map-chooser.yaml
 label-mapchooser-panel-title = Choose Map
