@@ -1,16 +1,16 @@
 ## world
 dropdown-difficulty =
-    .label = Difficulty
-    .description = The difficulty of the mission
+    .label = 난이도
+    .description = 미션의 난이도입니다
 
 options-difficulty =
-    .easy = Easy
-    .normal = Normal
-    .hard = Hard
+    .easy = 쉬움
+    .normal = 보통
+    .hard = 어려움
 
 ## player
 bot-campaign-ai =
-    .name = Campaign Player AI
+    .name = 캠페인 플레이어 AI
 
 ## campaign-rules.yaml
 actor-crate-name = Crate
@@ -29,8 +29,8 @@ actor-stavros-name = Stavros
 
 ## intervention
 actor-air-force-hq-name = Soviet Air Force HQ
-actor-mainland-name = Reach the mainland
-actor-givefix-name = Weapons Factory or Helipad
+actor-mainland-name = 본토에 도달
+actor-givefix-name = Weapons Factory 또는 Helipad
 
 ## monster-tank-madness
 actor-demitri-name = Dr. Demitri
@@ -69,7 +69,7 @@ actor-hgun-name = Heavy Turret Prototype
 
 actor-zkoi =
     .name = Chitzkoi
-    .generic-name = Cyborg Dog
+    .generic-name = 사이보그 개
 
 ## situation-critical, soviet-soldier-volkov-n-chitzkoi
 actor-volk-name = Volkov

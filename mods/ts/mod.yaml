@@ -226,35 +226,35 @@ ChromeMetrics:
 
 Fonts:
 	Tiny:
-		Font: common|FreeSans.ttf
+		Font: common|NanumGothic.ttf
 		Size: 10
 		Ascender: 8
 	TinyBold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 10
 		Ascender: 8
 	Small:
-		Font: common|FreeSans.ttf
+		Font: common|NanumGothic.ttf
 		Size: 12
 		Ascender: 9
 	Regular:
-		Font: common|FreeSans.ttf
+		Font: common|NanumGothic.ttf
 		Size: 14
 		Ascender: 11
 	Bold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 14
 		Ascender: 11
 	MediumBold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 18
 		Ascender: 14
 	BigBold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 24
 		Ascender: 18
 	Title:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 32
 		Ascender: 24
 
