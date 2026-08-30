@@ -40,7 +40,7 @@ namespace OpenRA
 		/// For each `dir/name.ftl` in <paramref name="paths"/>, appends `dir/{culture}/name.ftl` when it exists so that
 		/// translated messages override the defaults. Used for map-level bundles that cannot declare FluentLanguages.
 		/// </summary>
-		static ImmutableArray<string> WithLanguageOverrides(ImmutableArray<string> paths, string culture, IReadOnlyFileSystem fileSystem)
+		public static ImmutableArray<string> WithLanguageOverrides(ImmutableArray<string> paths, string culture, IReadOnlyFileSystem fileSystem)
 		{
 			if (culture == "en")
 				return paths;
