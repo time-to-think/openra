@@ -50,3 +50,6 @@ update.log
 
 # IntelliJ files
 .idea
+
+# Operator-local agent notes (never tracked)
+*.local.md
