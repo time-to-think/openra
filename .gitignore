@@ -53,3 +53,4 @@ update.log
 
 # Operator-local agent notes (never tracked)
 *.local.md
+!CLAUDE.local.md
