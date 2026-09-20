@@ -2,6 +2,7 @@
 
 ## Guide scope and local instructions
 
+- `CLAUDE.md` and `CLAUDE.local.md` are compatibility symlinks to `AGENTS.md` and `AGENTS.local.md`, respectively. Edit the `AGENTS` files only.
 - Before working in a checkout, read the applicable `AGENTS.md` hierarchy and the checkout's untracked `AGENTS.local.md` when it exists.
 - Keep machine-, checkout-, and operator-specific paths, access details, and operational constraints in `AGENTS.local.md`. Keep durable repository rules in tracked `AGENTS.md` files.
 - Never commit `AGENTS.local.md` or other `*.local.md` agent notes. Do not record secrets, credentials, tokens, or private endpoints in either tracked or local guides.
