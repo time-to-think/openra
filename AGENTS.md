@@ -1,10 +1,29 @@
 # Repository Guidance
 
+## Guide scope and local instructions
+
+- Before working in a checkout, read the applicable `AGENTS.md` hierarchy and the checkout's untracked `AGENTS.local.md` when it exists.
+- Keep machine-, checkout-, and operator-specific paths, access details, and operational constraints in `AGENTS.local.md`. Keep durable repository rules in tracked `AGENTS.md` files.
+- Never commit `AGENTS.local.md` or other `*.local.md` agent notes. Do not record secrets, credentials, tokens, or private endpoints in either tracked or local guides.
+- Local instructions may add checkout-specific constraints, but they must not weaken or override tracked safety, compatibility, branch, or upstream rules.
+
+## Language
+
+- Write commit subjects and bodies only in English.
+- Write source code, identifiers, comments, and code documentation only in English. Localized user-facing resources and translation data are exempt when their target language requires non-English text.
+
 ## Branch workflow
 
 - Use `develop` as the primary integration branch and the default target for local development.
 - Do not perform routine code work directly on `develop`. Create a dedicated `feature/<short-topic>` branch from the latest `origin/develop`, keep its scope focused, and merge it back into `develop` through a pull request.
 - Update a feature branch from `develop` before integration when needed, and resolve conflicts without discarding upstream-compatible behavior.
+
+## Source file size
+
+- New locally authored source files should stay at or below 200 logical lines of code and must not exceed 300 logical lines. Split code along clear responsibilities before crossing the hard limit.
+- Treat a hard-limit violation as a design issue to resolve in the same change, not as deferred cleanup. An exception is allowed only when preserving an upstream layout or contract is necessary for compatibility; keep it narrow and document the reason.
+- Any file that exists in `upstream/bleed` is outside the scope of the LOC limits, including when it is modified locally. Keep local patches to upstream files minimal, and do not split or rewrite them solely to satisfy local file-size preferences.
+- Generated code, vendored code, localization resources, and data files are excluded from the LOC limits. Do not edit generated or vendored files merely to reduce their size.
 
 ## Upstream compatibility
 
