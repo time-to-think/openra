@@ -179,6 +179,18 @@ FluentMessages:
 	ra|fluent/hotkeys.ftl
 	ra|fluent/rules.ftl
 
+FluentLanguages:
+	ko:
+		common|fluent/ko/common.ftl
+		common|fluent/ko/chrome.ftl
+		common|fluent/ko/ingame-debug.ftl
+		common|fluent/ko/hotkeys.ftl
+		common|fluent/ko/rules.ftl
+		ra|fluent/ko/ra.ftl
+		ra|fluent/ko/chrome.ftl
+		ra|fluent/ko/hotkeys.ftl
+		ra|fluent/ko/rules.ftl
+
 AllowUnusedFluentMessagesInExternalPackages: false
 
 Weapons:
@@ -226,31 +238,31 @@ ChromeMetrics:
 
 Fonts:
 	Tiny:
-		Font: common|FreeSans.ttf
+		Font: common|NanumGothic.ttf
 		Size: 10
 		Ascender: 8
 	TinyBold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 10
 		Ascender: 8
 	Small:
-		Font: common|FreeSans.ttf
+		Font: common|NanumGothic.ttf
 		Size: 12
 		Ascender: 9
 	Regular:
-		Font: common|FreeSans.ttf
+		Font: common|NanumGothic.ttf
 		Size: 14
 		Ascender: 11
 	Bold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 14
 		Ascender: 11
 	MediumBold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 18
 		Ascender: 14
 	BigBold:
-		Font: common|FreeSansBold.ttf
+		Font: common|NanumGothicBold.ttf
 		Size: 24
 		Ascender: 18
 	Title:

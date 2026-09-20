@@ -136,7 +136,8 @@ namespace OpenRA
 					{
 						var files = ImmutableArray<string>.Empty;
 						if (FluentMessageDefinitions.Value != null)
-							files = FieldLoader.GetValue<ImmutableArray<string>>("value", FluentMessageDefinitions.Value);
+							files = FluentProvider.WithLanguageOverrides(
+								FieldLoader.GetValue<ImmutableArray<string>>("value", FluentMessageDefinitions.Value), FluentProvider.CurrentCulture, fileSystem);
 
 						string text = null;
 						if (FluentMessageDefinitions.Nodes.Length > 0)
@@ -149,7 +150,7 @@ namespace OpenRA
 							text = builder.ToString();
 						}
 
-						FluentBundle = new FluentBundle(modData.Manifest.FluentCulture, files, fileSystem, text);
+						FluentBundle = new FluentBundle(FluentProvider.CurrentCulture, files, fileSystem, text);
 					}
 					else
 						FluentBundle = null;

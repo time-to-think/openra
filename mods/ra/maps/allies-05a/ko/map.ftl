@@ -1,0 +1,19 @@
+dropdown-difficulty =
+    .label = 난이도
+    .description = 미션의 난이도
+
+options-difficulty =
+    .easy = 쉬움
+    .normal = 보통
+    .hard = 어려움
+    .tough = 진정한 강자
+
+## rules.yaml
+briefing = 
+    Tanya를 구출하십시오.
+    
+    변장한 Spy는 개를 제외한 모든 적 유닛을 들키지 않고 지나칠 수 있습니다. 인근 Soviet 기지의 무기 공장으로 그를 보내 트럭을 탈취하고 Tanya를 구출하게 하십시오.
+    
+    Tanya의 도움을 받아 섬의 대공 방어를 제거하여 Chinook이 그녀를 구출하러 올 수 있게 하십시오.
+    
+    그 후 남은 모든 Soviet 건물과 유닛을 파괴하십시오.

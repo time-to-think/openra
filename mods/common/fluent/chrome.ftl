@@ -417,6 +417,7 @@ label-profile-section-header = Profile
 label-player-container = Player Name:
 label-playercolor-container-color = Preferred Color:
 label-display-section-header = Display
+label-language-dropdown = Language
 label-battlefield-camera-dropdown = Battlefield Camera:
 label-ui-scale-dropdown = UI Scale:
 checkbox-cursordouble-container = Increase Cursor Size
@@ -695,7 +696,7 @@ dropdownbutton-display-selection-container-dropdown = Standard
 checkbox-vsync-container = Enable VSync
 checkbox-frame-limit-gamespeed-container = Limit framerate to game tick rate
 label-gl-profile-dropdown-container = OpenGL Profile:
-label-restart-required-container-video-desc = Display and OpenGL changes require restart
+label-restart-required-container-video-desc = Display, OpenGL and language changes require restart
 
 ## settings-hotkeys.yaml
 hotkey-group-game-commands = Game Commands

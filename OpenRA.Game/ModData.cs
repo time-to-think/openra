@@ -55,7 +55,7 @@ namespace OpenRA
 
 		public ModData(Manifest mod, InstalledMods mods, bool useLoadScreen = false)
 		{
-			Languages = [];
+			Languages = [mod.FluentCulture, .. mod.FluentLanguages.Keys.Where(k => k != mod.FluentCulture).Order()];
 
 			// Take a local copy of the manifest
 			Manifest = new Manifest(mod.Id, mod.Package);

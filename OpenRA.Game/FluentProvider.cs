@@ -24,16 +24,58 @@ namespace OpenRA
 		static FluentBundle modFluentBundle;
 		static FluentBundle mapFluentBundle;
 
+		/// <summary>The culture code currently used for fluent messages ("en" unless a supported language is selected).</summary>
+		public static string CurrentCulture { get; private set; } = "en";
+
+		static string ResolveCulture(Manifest manifest)
+		{
+			var language = Game.Settings?.Game?.Language;
+			if (!string.IsNullOrEmpty(language) && manifest.FluentLanguages.ContainsKey(language))
+				return language;
+
+			return manifest.FluentCulture;
+		}
+
+		/// <summary>
+		/// For each `dir/name.ftl` in <paramref name="paths"/>, appends `dir/{culture}/name.ftl` when it exists so that
+		/// translated messages override the defaults. Used for map-level bundles that cannot declare FluentLanguages.
+		/// </summary>
+		public static ImmutableArray<string> WithLanguageOverrides(ImmutableArray<string> paths, string culture, IReadOnlyFileSystem fileSystem)
+		{
+			if (culture == "en")
+				return paths;
+
+			var builder = paths.ToBuilder();
+			foreach (var path in paths)
+			{
+				var slash = path.LastIndexOf('/');
+				var candidate = slash < 0
+					? $"{culture}/{path}"
+					: $"{path[..(slash + 1)]}{culture}/{path[(slash + 1)..]}";
+
+				if (fileSystem.Exists(candidate))
+					builder.Add(candidate);
+			}
+
+			return builder.ToImmutable();
+		}
+
 		public static void Initialize(Manifest manifest, IReadOnlyFileSystem fileSystem)
 		{
 			lock (SyncObject)
 			{
-				modFluentBundle = new FluentBundle(manifest.FluentCulture, manifest.FluentMessages, fileSystem);
+				CurrentCulture = ResolveCulture(manifest);
+				var modMessages = manifest.FluentMessages;
+				if (CurrentCulture != manifest.FluentCulture && manifest.FluentLanguages.TryGetValue(CurrentCulture, out var overrides))
+					modMessages = modMessages.AddRange(overrides);
+
+				modFluentBundle = new FluentBundle(CurrentCulture, modMessages, fileSystem);
 				if (fileSystem is Map map && map.FluentMessageDefinitions != null)
 				{
 					var files = ImmutableArray<string>.Empty;
 					if (map.FluentMessageDefinitions.Value != null)
-						files = FieldLoader.GetValue<ImmutableArray<string>>("value", map.FluentMessageDefinitions.Value);
+						files = WithLanguageOverrides(
+							FieldLoader.GetValue<ImmutableArray<string>>("value", map.FluentMessageDefinitions.Value), CurrentCulture, fileSystem);
 
 					string text = null;
 					if (map.FluentMessageDefinitions.Nodes.Length > 0)
@@ -46,7 +88,7 @@ namespace OpenRA
 						text = builder.ToString();
 					}
 
-					mapFluentBundle = new FluentBundle(manifest.FluentCulture, files, fileSystem, text);
+					mapFluentBundle = new FluentBundle(CurrentCulture, files, fileSystem, text);
 				}
 			}
 		}
